@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+:root{
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+ header{
+    background-color: rgb(19, 24, 27);
+    padding: 40px; 
+}
+.cabecalho-titulo{
+    font-family: var(--fonte-android);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.cabecalho-portifolio{
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 30px;
+}
+.cabecalho-diferente{
+    font-family: var(--fonte-padrao);
+    color: rgb(0, 247, 255);
+    font-size: 30px;
+}
+main{
+padding-top: 1rem;
+    background-color: rgb(29, 30, 34);
+}
+
+.rodape{
+    background-color:rgb(19, 24, 27);
+    padding: 10px; 
+ 
+}
+
+.rodape-title{
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+   
+}
+
+.rodape-nav{
+    display: flex;
+    justify-content: center;
+   
+}
+.rodape-nav-item{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px; 
+    color: white;
+    transition: 0.5s;
+}
+
+.rodape-nav-item:hover{
+    background-color: black;
+
+}
+@media screen and (min-width:400px){
+    .cabecalho-titulo{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:760px){
+    .cabecalho-portifolio{
+        position: absolute;
+        top: 1rem;
+    }
+}
+

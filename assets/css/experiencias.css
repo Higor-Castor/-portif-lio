@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+:root{
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+.experiencias-titulo{
+    font-family: var(--fonte-android);
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 3rem;
+}
+.experiencias-deferente{
+    color:  rgb(0, 247, 255);
+}
+
+.experiencias-paragrafo{
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 3rem 0 3rem 0;
+}
+

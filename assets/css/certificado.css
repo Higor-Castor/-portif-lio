@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+:root{
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+.certificado{
+    margin-top: 3rem;
+}
+
+.certificado-title{
+    font-family: var(--fonte-android);
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+.certificado-diferente{
+    color:  rgb(0, 247, 255);
+}
+
+.certificado > ul{
+    list-style-type: '\2B50';
+    list-style-position: inside;
+    columns: 2;
+    line-height: 1.5em;
+    margin-left: 3rem;
+
+}
+.certificado > ul > li{
+    margin-bottom: 1rem;
+}
+.certificado > ul > li > a{
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.certificado > ul > li > a:hover{
+    color:  rgb(0, 247, 255);
+    text-decoration: underline;
+}

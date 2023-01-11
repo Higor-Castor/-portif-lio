@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+:root{
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+.sobre{
+    margin-bottom: 13rem;
+}
+
+.sobre-foto{
+    width: 600px;
+    border-radius: 20px;
+    margin-left: 3rem;
+    position: absolute;
+}
+
+.sobre-title{ 
+    font-family: var(--fonte-android);
+    font-size: 50px;
+    color: white;  
+    margin: 0% 13rem 0 57rem;
+    text-align: center;
+
+}
+.sobre-diferente{
+    color:  rgb(0, 247, 255);
+}
+.sobre-informacao{
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    color: white;
+    padding: 10px 0;
+    text-align: justify;
+    margin: 0% 13rem 0 57rem;
+ }
+
+@media screen and (min-width:400px){
+    .sobre {
+        margin-bottom: 3rem;
+    }
+    .sobre-title {
+        margin: -20% 2rem 1rem 1rem;
+    }
+    .sobre-informacao {
+        margin: 51% 1rem 0 1rem;
+    }
+    .sobre-paragrafo{ margin-top: 0;
+    }
+
+    .sobre-foto {
+        width: 300px;
+        margin-left: 1rem;
+    }
+
+}
+@media screen and (min-width:600px){
+.sobre-informacao{
+    margin-top: 51%;
+}
+.sobre-paragrafo{
+    margin-top: 0;
+}
+}
+
+@media screen and (min-width:760px){
+    .sobre {
+        margin-bottom: 13rem;
+    }
+  
+    .sobre-title{  
+        margin: 0% 1rem 0 21rem;
+    }
+    .sobre-informacao{
+        margin: 31% 1rem 0 1rem;
+    }
+    .sobre-paragrafo{ margin-top: 0;
+    }
+
+    .sobre-foto{
+        width: 350px;
+        margin-left: 1rem;
+    }
+}
+@media screen and (min-width:1000px){
+    .sobre-informacao {
+        margin: 24% 1rem 0 1rem;
+    }
+    .sobre-paragrafo{
+        margin-top: 0;
+    }
+    .sobre-foto{
+        
+            width: 400px;
+            border-radius: 20px;
+            margin-left: 3rem;
+            position: absolute;
+        }
+        
+    }
+@media screen and (min-width:1300px){
+    .sobre-foto{
+        
+            width: 600px;
+            border-radius: 20px;
+            margin-left: 3rem;
+            position: absolute;
+        }
+        .sobre-informacao {
+            margin: 29% 21rem 0 1rem;
+        }
+        .sobre-paragrafo{ margin-top: 0;
+        }
+        
+    
+    }
+    @media screen and (min-width:1500px){
+        .sobre-informacao{
+            font-family: var(--fonte-padrao);
+            font-size: 30px;
+            color: white;
+            padding: 10px 0;
+            text-align: justify;
+            margin: 0% 13rem 0 57rem;
+         }
+
+    }

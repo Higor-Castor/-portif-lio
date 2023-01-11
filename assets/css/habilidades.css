@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+:root{
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+body{
+    background-image: linear-gradient(to left, black, gray );
+}
+
+.habilidades-title{
+    font-family: Android,cursive;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 3rem;
+
+}
+.habilidades-diferente{
+    color: rgb(0, 247, 255);
+}
+
+
+.habilidades-secao{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.habilidades-box{
+    background-color: white;
+    width: 276px;
+    height: 285px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0; 
+    position: relative;
+    overflow: hidden;
+    padding-left: 37px;
+    margin-top: 20px;
+
+}
+
+
+
+.habilidades-box h3{
+    text-transform: uppercase;
+    color: black;
+}
+
+.habilidades-box h3{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+.habilidades-box:hover h3{
+    font-size: 1rem;
+    transform: translate(90px,-120px);
+    transition: .5s;
+
+}
+.habilidades-box:hover h3.diferente{
+    font-size: 11px;
+    transform: translate(90px,-100px);
+
+
+}
+
+.habilidades-box .habilidades-aparecer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    transition: .5s ease-in-out;
+    padding: 90px 0px;
+
+}
+
+
+.habilidades-box:hover .habilidades-aparecer{
+    transform: translateX(100%);
+}
+
+@media screen and (min-width:760px){
+    .habilidades{
+        margin-top: -12rem;
+    }
+    .habilidades-box{
+        padding-left:20px ;
+    }
+
+    .habilidades-box:hover h3.diferente{
+        font-size: 10px;}
+   
+    }

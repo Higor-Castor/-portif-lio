@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+:root{
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+.projeto-title{
+    font-family: Android,cursive;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 3rem;
+
+}
+
+.projeto-diferente{
+    color: rgb(0, 247, 255);
+}
+
+.projeto > a > img {
+    margin: 0 0 3rem 5rem;
+    width:  500px;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.projeto > a > img:hover{
+    width:  520px;
+    height: 520px;
+}  
+@media screen and (min-width:400px){
+    .projeto > a > img {
+        margin: 0px 0 1rem 6rem;
+        width: 300px;
+    }
+    .projeto > a > img:hover{
+        width: 320px;
+    }
+
+
+}
+@media screen and (min-width:760px){
+    .projeto > a > img {
+        margin: 0 0 3rem 8rem;
+    }
+}
