@@ -84,4 +84,49 @@
     }
 }
 
+@media screen and (min-width:1000px){
+    .apresentacao{
+        display: flex;
+        margin: 0px 150px 185px 94px;
+    }
+    .apresentacao-foto{
+        position: absolute;
+        left: 34rem;
+        border: 10px  rgb(0, 247, 255) solid;
+        border-radius: 5px;
+    
+    }
+    
+    .apresentacao-p{
+        text-align: center;
+        font-size: 40px;
+        color:  rgb(0, 247, 255);
+    }
+    
+    .apresentacao-nome {
+        color: white;
+        font-size: 50px;
+    }
+    .espaco{
+        color: white;
+        margin-bottom: 3rem
+    }
+    
+    .apresentacao-button{
+        padding: 20px 40px;
+        background-color: rgb(0, 247, 255);
+        border-radius: 18px;
+        margin-left: 6rem;
+        text-decoration: none;
+        font-family: var(--fonte-padrao);
+        font-size: 30px;
+        color: white;
+    }
+    
+    .apresentacao-button:hover{
+        background-color: white;
+        color: black;
+        transition: 0.5ms;
+    }
+}
 
