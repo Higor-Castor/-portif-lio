@@ -5,38 +5,35 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
 }
 
-.apresentacao{
-    display: flex;
-    margin: 0px 150px 185px 94px;
+.apresentacao-secao{
+    margin-left: 4%;
+    margin-bottom: 5rem;
 }
+
 .apresentacao-foto{
     position: absolute;
-    left: 34rem;
+    left: 30%;
     border: 10px  rgb(0, 247, 255) solid;
     border-radius: 5px;
+    width: 300px;
 
 }
 
 .apresentacao-p{
-    text-align: center;
     font-size: 40px;
+    color: white;
+    margin-bottom: 3rem;
+}
+.apresentacao-p-colorido{
     color:  rgb(0, 247, 255);
 }
-
-.apresentacao-nome {
-    color: white;
-    font-size: 50px;
+.apresentacao-p-nome{
+    font-size: 45px;
 }
-.espaco{
-    color: white;
-    margin-bottom: 3rem
-}
-
 .apresentacao-button{
     padding: 20px 40px;
     background-color: rgb(0, 247, 255);
     border-radius: 18px;
-    margin-left: 6rem;
     text-decoration: none;
     font-family: var(--fonte-padrao);
     font-size: 30px;
@@ -48,39 +45,26 @@
     color: black;
     transition: 0.5ms;
 }
-@media screen and (min-width:400px){
-    .apresentacao{
-        margin: 0px 150px 185px 3px;
-    }
-    .apresentacao-foto{
-    left: 18rem;
-    width: 173px;
-}
-.apresentacao-p{
-    font-size: 30px;
-}
-.apresentacao-nome{
-    font-size: 35px;
-}
-.apresentacao-button{
-    margin-left: 2rem;
-}
-    }
 
-@media screen and (min-width:760px){
+
+@media screen and (max-width:850px){
     .apresentacao{
-        margin-left: 6px;
+    
     }
     .apresentacao-foto{ 
-        left: 20rem;
-        width: 350px;    
+        left: 50%;
+        width: 170px;
+        border: 5px  rgb(0, 247, 255) solid;
     }
 
-    .apresentacao-nome{
-        font-size: 35px;
+    .apresentacao-p{
+        font-size: 30px;
+    }
+    .apresentacao-p-nome{
+        font-size: 32px;
     }
     .apresentacao-button{
-        margin-left: 3rem;
+    
     }
 }
 

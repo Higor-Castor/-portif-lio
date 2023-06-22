@@ -11,13 +11,16 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-android: 'Android', cursive;
 }
-
+.experiencias{
+    margin-bottom: 5rem;
+}
 .experiencias-titulo{
     font-family: var(--fonte-android);
     font-size: 50px;
     text-align: center;
     color: white;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
+
 }
 .experiencias-deferente{
     color:  rgb(0, 247, 255);
@@ -28,6 +31,10 @@
     font-size: 30px;
     text-align: center;
     color: white;
-    margin: 3rem 0 3rem 0;
-}
 
+}
+@media screen and (max-width:850px){
+    .experiencias-titulo{
+        font-size: 40px;
+    }
+}

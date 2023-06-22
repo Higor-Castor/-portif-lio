@@ -12,7 +12,8 @@
     --fonte-android: 'Android', cursive;
 }
 .certificado{
-    margin-top: 3rem;
+    margin-bottom: 5rem;
+ 
 }
 
 .certificado-title{
@@ -21,6 +22,7 @@
     color: white;
     text-align: center;
     margin-bottom: 3rem;
+
     
 }
 .certificado-diferente{
@@ -32,7 +34,7 @@
     list-style-position: inside;
     columns: 2;
     line-height: 1.5em;
-    margin-left: 3rem;
+  
 
 }
 .certificado > ul > li{
@@ -50,4 +52,12 @@
 .certificado > ul > li > a:hover{
     color:  rgb(0, 247, 255);
     text-decoration: underline;
+}
+@media screen and (max-width:850px){
+    .certificado-title{
+        font-size: 40px;
+    }
+    .certificado > ul > li > a{
+        font-size: 18px;
+    }
 }

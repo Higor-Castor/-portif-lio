@@ -12,7 +12,9 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-android: 'Android', cursive;
 }
-
+ body{
+    background-color: rgb(29, 30, 34);
+ }
  header{
     background-color: rgb(19, 24, 27);
     padding: 40px; 
@@ -35,7 +37,7 @@
 }
 main{
 padding-top: 1rem;
-    background-color: rgb(29, 30, 34);
+   
 }
 
 .rodape{
@@ -69,17 +71,5 @@ padding-top: 1rem;
 .rodape-nav-item:hover{
     background-color: black;
 
-}
-@media screen and (min-width:400px){
-    .cabecalho-titulo{
-        margin-top: 1rem;
-    }
-}
-
-@media screen and (max-width:760px){
-    .cabecalho-portifolio{
-        position: absolute;
-        top: 1rem;
-    }
 }
 

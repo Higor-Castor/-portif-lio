@@ -12,17 +12,17 @@
     --fonte-android: 'Android', cursive;
 }
 
-body{
-    background-image: linear-gradient(to left, black, gray );
+.habilidades{
+    margin-bottom: 5rem;
 }
 
 .habilidades-title{
     font-family: Android,cursive;
     text-align: center;
     font-size: 50px;
-    padding: 30px;
-    color: white;
     margin-bottom: 3rem;
+    color: white;
+
 
 }
 .habilidades-diferente{
@@ -48,8 +48,7 @@ body{
     padding: 0; 
     position: relative;
     overflow: hidden;
-    padding-left: 37px;
-    margin-top: 20px;
+
 
 }
 
@@ -98,14 +97,10 @@ body{
     transform: translateX(100%);
 }
 
-@media screen and (min-width:760px){
-    .habilidades{
-        margin-top: -12rem;
+@media screen and (max-width:850px){
+    .habilidades-title{
+        font-size: 40px;
     }
-    .habilidades-box{
-        padding-left:20px ;
-    }
-
     .habilidades-box:hover h3.diferente{
         font-size: 10px;}
    
