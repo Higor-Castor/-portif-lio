@@ -68,7 +68,7 @@
     }
 }
 
-@media screen and (min-width:1000px){
+@media screen and (max-width:1000px){
     .apresentacao{
         display: flex;
         margin: 0px 150px 185px 94px;
