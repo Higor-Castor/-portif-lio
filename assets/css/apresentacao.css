@@ -57,10 +57,13 @@
 
     .apresentacao-p{
         font-size: 25px;
+        margin-bottom: 5rem;
     }
     .apresentacao-p-nome{
         font-size: 27px;
     }
-   
+   .apresentacao-secao{
+    margin-left: 1px;
+   }
 }
 
