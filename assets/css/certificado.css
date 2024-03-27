@@ -12,8 +12,7 @@
     --fonte-android: 'Android', cursive;
 }
 .certificado{
-    margin-bottom: 5rem;
- 
+    padding-top: 180px;
 }
 
 .certificado-title{
@@ -22,7 +21,6 @@
     color: white;
     text-align: center;
     margin-bottom: 3rem;
-
     
 }
 .certificado-diferente{
@@ -34,7 +32,7 @@
     list-style-position: inside;
     columns: 2;
     line-height: 1.5em;
-  
+    margin-left: 3rem;
 
 }
 .certificado > ul > li{
@@ -53,11 +51,15 @@
     color:  rgb(0, 247, 255);
     text-decoration: underline;
 }
-@media screen and (max-width:850px){
-    .certificado-title{
-        font-size: 40px;
+
+@media screen and (max-width: 400px){
+
+    .certificado > ul{
+        margin-left: 1rem;
+
     }
     .certificado > ul > li > a{
-        font-size: 18px;
+        font-size: 16px;
     }
+
 }

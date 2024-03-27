@@ -13,13 +13,14 @@
     --fonte-android: 'Android', cursive;
 }
 .sobre{
-    margin-bottom: 5rem;
+    padding-top: 180px;
+    margin-bottom: 13rem;
 }
 
 .sobre-foto{
-    width: 410px;
+    width: 600px;
     border-radius: 20px;
-    left: 1.5%;
+    margin-left: 3rem;
     position: absolute;
 }
 
@@ -28,29 +29,118 @@
     font-size: 50px;
     color: white;  
     text-align: center;
-    margin-bottom: 3rem;
 
 }
 .sobre-diferente{
     color:  rgb(0, 247, 255);
 }
-.sobre-paragrafo{
+.sobre-informacao{
     font-family: var(--fonte-padrao);
     font-size: 30px;
     color: white;
+    padding: 10px 0;
     text-align: justify;
-    margin: 0 3% 0 50%;
-    line-height: 45px;
-
+    margin: 0% 13rem 0 57rem;
  }
- @media screen and (max-width:850px){
+
+@media(max-width:480px){
+    .sobre {
+        margin-bottom: 3rem;
+    }
+    .sobre-title {
+        margin: -20% 2rem 1rem 1rem;
+    }
+    .sobre-informacao {
+        margin: 2rem -1rem 0 1rem;
+    }
+
+
+    .sobre-foto {
+        width: 280px;
+        margin: 0;
+        position: static;
+
+    }
+    .sobre-div-foto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width:481px ) and (max-width: 769px) {
     .sobre-title{
-        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+    .sobre-informacao{
+        margin: 2rem 1rem 0 1rem;
+    }
+
+    .sobre-div-foto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .sobre-foto{
-        width: 95vw;
+        width: 80vw;
+        margin: 0;
+        position: static;
     }
-    .sobre-paragrafo{
-        margin: 80% 2% 0 3%;
+
+
+}
+
+@media (min-width:770px ) and (max-width: 990px) {
+
+    .sobre-title{
+        margin-bottom: 2rem;
     }
- }
+
+    .sobre-foto{
+        position: static;
+        margin: auto;
+        display: flex;
+    }
+    .sobre-informacao{
+        margin: 0% 1rem 0 1rem;
+    }
+
+}
+
+@media (min-width:991px ) and (max-width: 1200px) {
+    .sobre-title{
+        margin-bottom: 2rem;
+    }
+    .sobre-foto{
+        margin-left: 1rem;
+    }
+    .sobre-informacao{
+        margin: 0 1rem 0 39rem;
+    }
+}
+@media (min-width:1201px ) and (max-width: 1620px) {
+    .sobre{
+        margin-bottom: 24rem;
+    }
+    .sobre-title{
+        margin-bottom: 2rem;
+    }
+    .sobre-informacao{
+        margin: 0% 1rem 0 42rem
+    }
+
+}
+@media (min-width:1621px ){
+    .sobre{
+        margin-bottom: 24rem;
+    }
+    .sobre-title{
+        margin-bottom: 2rem;
+    }
+    .sobre-informacao{
+        margin: 0% 12rem 0 42rem
+    }
+
+
+}

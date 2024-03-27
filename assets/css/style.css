@@ -12,12 +12,16 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-android: 'Android', cursive;
 }
- body{
+body{
     background-color: rgb(29, 30, 34);
- }
+}
  header{
-    background-color: rgb(19, 24, 27);
-    padding: 40px; 
+    background: linear-gradient(to top, rgb(19, 24, 27), rgba(19, 21, 22, 0.925));
+    padding: 44px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 .cabecalho-titulo{
     font-family: var(--fonte-android);
@@ -35,10 +39,58 @@
     color: rgb(0, 247, 255);
     font-size: 30px;
 }
-main{
-padding-top: 1rem;
-   
+.conteudo {
+    opacity: 0;
+    transition: opacity 0.5s ease; 
 }
+
+.aparecer {
+    animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.menu-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 15px; 
+    right: 94px; 
+
+}
+.menu-itens{
+   display: none;
+   position: absolute; 
+   top: 13px; 
+   right: 119px; 
+   flex-direction: column;
+   background-color: black;
+}
+.menu-li{
+    margin-bottom: 5px;
+
+}
+.menu-link{
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.menu-link:hover{
+    color: rgb(0, 247, 255);
+}
+
 
 .rodape{
     background-color:rgb(19, 24, 27);
@@ -60,16 +112,36 @@ padding-top: 1rem;
    
 }
 .rodape-nav-item{
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px; 
-    color: white;
-    transition: 0.5s;
-}
 
-.rodape-nav-item:hover{
-    background-color: black;
+    margin-left: 25px;
+    margin-top: 8px;
 
 }
+
+@media  (max-width:480px){
+    .cabecalho-titulo{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width:768px){
+    .menu-icon{
+        display: none;
+        position: fixed; 
+   
+        
+    }
+    .menu-itens{
+        display: flex;
+        flex-direction: row;
+        top: inherit;
+        background-color: rgb(19, 24, 27);
+    }
+    .menu-li{
+        margin-left: 15px;
+    }
+
+    
+}
+
 

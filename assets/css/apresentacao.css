@@ -5,35 +5,40 @@
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
 }
 
-.apresentacao-secao{
-    margin-left: 4%;
-    margin-bottom: 5rem;
+.apresentacao{
+    padding-top: 180px;
+    display: flex;
+    margin: 20vh 150px 185px 94px;
 }
-
 .apresentacao-foto{
     position: absolute;
-    left: 30%;
     border: 10px  rgb(0, 247, 255) solid;
     border-radius: 5px;
-    width: 300px;
+    z-index: 999;
+
 
 }
 
 .apresentacao-p{
+    text-align: center;
     font-size: 40px;
-    color: white;
-    margin-bottom: 3rem;
-}
-.apresentacao-p-colorido{
     color:  rgb(0, 247, 255);
 }
-.apresentacao-p-nome{
-    font-size: 45px;
+
+.apresentacao-nome {
+    color: white;
+    font-size: 50px;
 }
+.espaco{
+    color: white;
+    margin-bottom: 3rem
+}
+
 .apresentacao-button{
     padding: 20px 40px;
     background-color: rgb(0, 247, 255);
     border-radius: 18px;
+    margin-left: 6rem;
     text-decoration: none;
     font-family: var(--fonte-padrao);
     font-size: 30px;
@@ -45,25 +50,87 @@
     color: black;
     transition: 0.5ms;
 }
+@media (max-width:480px){
+    .apresentacao{
+        margin: 20vh 150px 185px 3px;
 
+    }
+    .apresentacao-foto{
+    left: 75vw;
+    width: 20vh;
+    border: 5px  rgb(0, 247, 255) solid;
+    border-radius: 5px;
+}
+.apresentacao-p{
+    font-size: 30px;
+}
+.apresentacao-nome{
+    font-size: 35px;
+}
+.apresentacao-button{
+    margin-left: 2rem;
+}
+    }
 
-@media screen and (max-width:850px){
-  
+@media (min-width:481px) and (max-width:769px){
+    .apresentacao{
+        margin-left: 6px;
+    }
     .apresentacao-foto{ 
-        left: 50%;
-        width: 170px;
-        border: 5px  rgb(0, 247, 255) solid;
+        left: 69vw;
+        width: 27vw;
     }
 
-    .apresentacao-p{
-        font-size: 25px;
-        margin-bottom: 5rem;
+    .apresentacao-nome{
+        font-size: 35px;
     }
-    .apresentacao-p-nome{
-        font-size: 26px;
+    .apresentacao-button{
+        margin-left: 3rem;
     }
-   .apresentacao-secao{
-    margin-left: 1px;
-   }
+}
+@media (min-width:770px) and (max-width:991px) {
+    .apresentacao{
+        margin-left: 1rem;
+    }
+    .apresentacao-foto{
+        left: 57vw;
+        width: 20vw;
+    }
 }
 
+@media (min-width:992px) and (max-width:1200px) {
+    .apresentacao{
+        margin-left: 1rem;
+    }
+    .apresentacao-foto{
+        left: 49vw;
+        width: 25vw;
+    }
+}
+
+@media (min-width:1201px){
+    .apresentacao{
+        display: flex;
+        margin: 20vh 150px 185px 94px;
+    }
+    .apresentacao-foto{
+    left: 41vw;
+    width: 17vw;
+    }
+    
+    .apresentacao-p{
+        text-align: center;
+    }
+    
+    .apresentacao-nome {
+        color: white;
+        font-size: 50px;
+    }
+    .espaco{
+        margin-bottom: 3rem
+    }
+    
+    .apresentacao-button{
+        margin-left: 6rem;}
+    
+}
