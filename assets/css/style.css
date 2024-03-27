@@ -19,7 +19,7 @@ body{
     background: linear-gradient(to top, rgb(19, 24, 27), rgba(19, 21, 22, 0.925));
     padding: 44px; 
     position: fixed;
-    width: 100%;
+    width: 90%;
     top: 0;
     z-index: 1000;
 }
@@ -95,6 +95,8 @@ body{
 .rodape{
     background-color:rgb(19, 24, 27);
     padding: 10px; 
+    width: 90%;
+    bottom: 0;
  
 }
 
